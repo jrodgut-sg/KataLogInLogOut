@@ -6,20 +6,38 @@
     android:orientation="vertical"
     android:gravity="center">
     <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/EmailEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:hint="Email"/>
 
     <android.support.v7.widget.AppCompatEditText
+        android:id="@+id/PasswordEditText"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:inputType="textPassword"
         android:hint="Password"/>
 
     <android.support.v7.widget.AppCompatButton
+        android:id="@+id/LoginButton"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:text="Login"
         android:enabled="false"/>
+
+    <android.support.v7.widget.AppCompatButton
+        android:id="@+id/LogoutButton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Logout"
+        android:visibility="gone"/>
+
+    <android.support.v7.widget.AppCompatTextView
+        android:id="@+id/ErrorTextView"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="Oooops! error"
+        android:visibility="gone"/>
+
 
 </LinearLayout>
